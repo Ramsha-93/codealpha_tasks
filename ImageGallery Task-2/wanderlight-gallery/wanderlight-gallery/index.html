@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlight — A Photography Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <span class="sitenav-mark">Wander<em>light</em></span>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="sitenav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <div class="hero-slides">
+    <div class="hero-bg active" style="background-image:url('https://picsum.photos/id/1015/1800/1200')"></div>
+    <div class="hero-bg" style="background-image:url('https://picsum.photos/id/1043/1800/1200')"></div>
+    <div class="hero-bg" style="background-image:url('https://picsum.photos/id/164/1800/1200')"></div>
+    <div class="hero-bg" style="background-image:url('https://picsum.photos/id/1074/1800/1200')"></div>
+  </div>
+  <header class="masthead">
+    <div>
+      <span class="hero-badge"><span class="dot"></span>Currently accepting print orders</span>
+      <h1 class="brand">Wander<em>light</em></h1>
+      <p class="lede">A running field journal of places, structures, and creatures worth stopping for — forty-eight plates, four ways of looking. Every frame is a small argument for slowing down.</p>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+    <div class="masthead-meta">
+      <span class="num">48</span>
+      plates on the wall<br>this season
+    </div>
+  </header>
+</div>
+
+<section class="highlights reveal">
+  <div class="highlight">
+    <span class="h-num">01</span>
+    <h3>Landscapes &amp; Light</h3>
+    <p>Valleys, ridgelines, and the hour just after sunrise — plates chosen for what the light was doing, not just where it was.</p>
+  </div>
+  <div class="highlight">
+    <span class="h-num">02</span>
+    <h3>Structures &amp; Lines</h3>
+    <p>Stairwells, glass corridors, and rooftops studied for geometry — the quieter architecture of a city most people walk past.</p>
+  </div>
+  <div class="highlight">
+    <span class="h-num">03</span>
+    <h3>Wild &amp; Watching</h3>
+    <p>Herds, foragers, and treeline residents caught at a respectful distance, in the low light they actually live in.</p>
+  </div>
+  <div class="highlight">
+    <span class="h-num">04</span>
+    <h3>Streets &amp; Strangers</h3>
+    <p>Markets, alleyways, and rain-lit corners — the unposed, ordinary moments that end up mattering most.</p>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="featured-card">
+    <div class="featured-media">
+      <img src="https://picsum.photos/id/1015/1000/1000" alt="River Bend at Dawn">
+    </div>
+    <div class="featured-copy">
+      <span class="kicker">Plate of the season</span>
+      <h2>River Bend at Dawn</h2>
+      <p>Shot on the fifth visit to the same bend, waiting for the fog to sit just low enough to catch the first light without burning out the water.</p>
+      <div class="featured-meta">
+        <div><span class="l">Location</span><span class="v">Lowland Basin</span></div>
+        <div><span class="l">Category</span><span class="v">Landscape</span></div>
+        <div><span class="l">Plate</span><span class="v">No. 06</span></div>
+      </div>
+      <a href="#gallery" class="featured-btn">Browse all 48 plates
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="scroll-margin-top:60px;">
+<nav class="filters" id="filters">
+  <span class="tag-label">View —</span>
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="landscape">Landscapes</button>
+  <button class="filter-btn" data-filter="architecture">Architecture</button>
+  <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+  <button class="filter-btn" data-filter="street">Street</button>
+  <span class="count" id="count">48 plates</span>
+</nav>
+
+<main class="gallery-wrap">
+  <div class="masonry" id="masonry"></div>
+</main>
+</section>
+
+<section class="about reveal" id="about" style="scroll-margin-top:60px;">
+  <div class="about-top">
+    <div class="about-portrait">
+      <img src="https://picsum.photos/id/177/700/820" alt="The photographer at work in the field">
+    </div>
+    <div class="about-copy">
+      <div class="kicker">About the journal</div>
+      <h2>Looking closely, one plate at a time.</h2>
+      <p>Wanderlight started as a set of notebooks kept on long train rides and slower mornings — a way of paying attention to valleys, buildings, animals, and street corners that would otherwise pass by unrecorded.</p>
+      <p>Every plate on this wall is chosen for what it teaches about light and patience, not for where it was taken. The categories are loose; the attention behind them isn't.</p>
+      <p>There's no studio here, no controlled light — just a bag, a notebook, and a habit of arriving early and leaving late. Most plates are the fourth or fifth attempt at the same corner, on a day the light finally cooperated.</p>
+      <div class="about-stats">
+        <div><span class="n">6</span><span class="l">years keeping the journal</span></div>
+        <div><span class="n">40+</span><span class="l">places visited</span></div>
+        <div><span class="n">48</span><span class="l">plates on display now</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="kicker">Field notes</div>
+    <div class="timeline-grid">
+      <div class="timeline-track">
+        <div class="timeline-item">
+          <span class="t-year">2019</span>
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>The first notebook</h4>
+            <p>Started keeping a paper journal of light and weather on weekend train trips — no camera worth mentioning, just notes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="t-year">2021</span>
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>Wanderlight goes public</h4>
+            <p>Turned three years of notebooks into a small online wall of plates — landscapes and architecture first, wildlife later.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="t-year">2023</span>
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>Street work begins</h4>
+            <p>Added a fourth category after a month spent shooting nothing but market mornings and rain-lit alleyways.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="t-year">2026</span>
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>Forty-eight plates, and counting</h4>
+            <p>The wall keeps growing steadily — a dozen new plates a season, each one still chosen by hand.</p>
+          </div>
+        </div>
+      </div>
+
+      
+        <iframe src="https://www.youtube.com/embed/Dsvmzg9nMkU" width="560" height="450" aspect-ratio: 9 / 16;></iframe>
+       
+    </div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact" style="scroll-margin-top:60px;">
+  <div class="contact-intro">
+    <div class="kicker">Get in touch</div>
+    <h2>Say hello.</h2>
+    <p>For prints, commissions, or just to talk about a place you think I should see next — reach out below.</p>
+    <div class="contact-detail">
+      Email — <a href="mailto:hello@wanderlight-journal.com">hello@wanderlight-journal.com</a><br>
+      Studio — <a href="#">Open by appointment</a>
+    </div>
+  </div>
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <label for="cf-name">Name</label>
+      <input type="text" id="cf-name" name="name" required>
+    </div>
+    <div class="field">
+      <label for="cf-email">Email</label>
+      <input type="email" id="cf-email" name="email" required>
+    </div>
+    <div class="field">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="send-btn">Send message</button>
+    <span class="form-note" id="formNote">Thank you — your message has been noted.</span>
+  </form>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <div class="marquee-item"><img src="https://picsum.photos/id/1018/80/80" alt=""><span>Landscapes</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/164/80/80" alt=""><span>Architecture</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1074/80/80" alt=""><span>Wildlife</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1071/80/80" alt=""><span>Street</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1043/80/80" alt=""><span>Landscapes</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/250/80/80" alt=""><span>Architecture</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1024/80/80" alt=""><span>Wildlife</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1062/80/80" alt=""><span>Street</span><span class="m-count">12 plates</span></div>
+    <!-- duplicate set for seamless loop -->
+    <div class="marquee-item"><img src="https://picsum.photos/id/1018/80/80" alt=""><span>Landscapes</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/164/80/80" alt=""><span>Architecture</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1074/80/80" alt=""><span>Wildlife</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1071/80/80" alt=""><span>Street</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1043/80/80" alt=""><span>Landscapes</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/250/80/80" alt=""><span>Architecture</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1024/80/80" alt=""><span>Wildlife</span><span class="m-count">12 plates</span></div>
+    <div class="marquee-item"><img src="https://picsum.photos/id/1062/80/80" alt=""><span>Street</span><span class="m-count">12 plates</span></div>
+  </div>
+</div>
+
+<footer>
+  <span>Wanderlight Journal — a photography study. Images for demonstration only.</span>
+  <span><a href="mailto:hello@wanderlight-journal.com">hello@wanderlight-journal.com</a></span>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <div class="lightbox-inner">
+    <img id="lbImg" src="" alt="">
+    <div class="lightbox-caption">
+      <span class="title" id="lbTitle"></span>
+      <span class="sub" id="lbSub"></span>
+    </div>
+  </div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
